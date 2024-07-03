@@ -1,6 +1,8 @@
+##################  PROVIDER  ##################
 provider "aws" {
   region = var.region
 }
+
 ################## INSTANCE EC2 ##################
 resource "aws_instance" "web" {
   ami           = var.ami

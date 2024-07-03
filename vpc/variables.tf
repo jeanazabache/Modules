@@ -1,8 +1,10 @@
+################## Region AWS ##################
 variable "region" {
   description = "The AWS region to create the VPC in"
   type        = string
 }
 
+################## Variable CIDR VPC ##################
 variable "vpc_cidr_block" {
   description = "The CIDR block for the VPC"
   type        = string
@@ -13,6 +15,7 @@ variable "vpc_name" {
   type        = string
 }
 
+################## Count Subnet ##################
 variable "subnet_count_public" {
   description = "Number of subnets to create"
   type        = number
@@ -23,11 +26,13 @@ variable "subnet_count_private" {
   type        = number
 }
 
+################## Availability Zone ##################
 variable "availability_zones" {
   description = "List of availability zones for the subnets"
   type        = list(string)
 }
 
+################## Variables CIDR ##################
 variable "subnet_cidrs" {
   description = "List of CIDR blocks for the subnets"
   type        = list(string)
