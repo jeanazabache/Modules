@@ -1,4 +1,5 @@
 .Terraform
+.gitingnore
 .DS_Store
 .terraform.tfstate.lock.info
 terraform.tfstate
