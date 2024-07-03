@@ -33,11 +33,6 @@ variable "availability_zones" {
 }
 
 ################## Variables CIDR ##################
-variable "subnet_cidrs" {
-  description = "List of CIDR blocks for the subnets"
-  type        = list(string)
-}
-
 variable "subnets_cidr_public" {
   description = "Lista de cidrs para subnets publicos"
   type        = list(string)
