@@ -17,4 +17,5 @@ variable "security_group_rules" {
 
 variable "name_security_group" {
   description = "Name security group"
+  type = string
 }
