@@ -14,3 +14,7 @@ variable "security_group_rules" {
     source_security_group    = optional(bool, false)
   }))
 }
+
+variable "name_security_group" {
+  description = "Name security group"
+}

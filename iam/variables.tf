@@ -1,10 +1,10 @@
 variable "name_role_iam" {
-  description = "Nombre del rol IAM"
+  description = "Name Rol IAM"
   type = string
 }
 
 variable "aws_policy_integrate" {
-  description = "Nombre de la politica integrada de AWS"
+  description = "Code at policy AWS Integrate"
   type = string
 }
 

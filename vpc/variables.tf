@@ -42,3 +42,9 @@ variable "subnets_cidr_private" {
   description = "Lista de cidrs para subnets publicos"
   type        = list(string)
 }
+
+################## Security Group ##################
+variable "name_security_group" {
+  description = "Name security group"
+  type = string
+}
