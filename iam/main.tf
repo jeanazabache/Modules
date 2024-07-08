@@ -1,4 +1,4 @@
-################## Politicas de AWS Session Management ##################
+################## AWS Session Management Policy ##################
 
 resource "aws_iam_role" "ssm_role" {
   name = var.name_role_iam

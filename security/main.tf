@@ -1,4 +1,4 @@
-################## Policy AWS Session Management ##################
+################## AWS Session Management ##################
 resource "aws_security_group" "security_group" {
   name        = var.name_security_group
   vpc_id      = var.vpc_id
