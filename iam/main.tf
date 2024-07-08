@@ -1,5 +1,4 @@
 ################## AWS Session Management Policy ##################
-
 resource "aws_iam_role" "ssm_role" {
   name = var.name_role_iam
 
@@ -18,8 +17,8 @@ resource "aws_iam_role" "ssm_role" {
   })
 }
 
-################## Attachment Policy with Role ##################
 
+################## Attachment Policy with Role ##################
 resource "aws_iam_role_policy_attachment" "ssm_policy_attachment" {
   role       = aws_iam_role.ssm_role.name
   policy_arn = var.aws_policy_integrate
@@ -27,7 +26,6 @@ resource "aws_iam_role_policy_attachment" "ssm_policy_attachment" {
 
 
 ################## EC2 - Profile IAM ##################
-
 resource "aws_iam_instance_profile" "ssm_instance_profile" {
   name = "ssm_instance_profile"
   role = aws_iam_role.ssm_role.name
