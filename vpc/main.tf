@@ -1,10 +1,9 @@
-##################  PROVIDER  ##################
+################## Provider ########################
 provider "aws" {
   region = var.region
 }
 
-##################    VPC   ##################
-
+##################### VPC ###########################
 resource "aws_vpc" "main" {
   cidr_block = var.vpc_cidr_block
 
@@ -12,7 +11,6 @@ resource "aws_vpc" "main" {
     Name = var.vpc_name
   }
 }
-
 
 ################## INTERNET GATEWAY ##################
 resource "aws_internet_gateway" "internet_gateway" {
